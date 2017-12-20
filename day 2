@@ -71,6 +71,79 @@ int i;
 }
 
 ---------------------------------------------------------------
+1. Write a program in C to display the first 10 natural numbers. 
+#include <iostream>
+using namespace std;
+int main() {
+    int i;
+     for(i=1;i<=10;i++)
+     printf(" %d ", i);
+}
+2. Write a C program to find the sum of first 10 natural numbers.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, sum = 0;
+     printf("the first 10 natural numbers is =\n");
+     for(i=1;i<=10;i++)
+     { 
+        sum = sum+i;
+     
+     printf(" %d",i);
+     }
+    printf("\nthe sum of first 10 natural numbers = %d\n",sum);
+}
+3. Write a program in C to read 10 numbers from keyboard and find their sum and average.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int i,n,sum=0;
+	float avg;
+	printf("Input the 10 numbers : \n");
+	for (i=1;i<=10;i++)
+	{
+                printf("Number-%d :\n" ,i);
+
+		scanf("%d",&n);
+		sum=sum+n;
+	}
+	avg=sum/10.0;
+	printf("\nThe sum of 10 no is : %d\nThe Average is : %f\n",sum,avg);
+ 
+}
+4.Write a program in C to display the cube of the number upto given an integer.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int i,n;
+	printf("Input the 10 numbers : \n");
+	for (i=1;i<=10;i++)
+    {
+	    scanf("%d" , &n);
+        printf("Number is %d :%d and the cube is %d \n" ,i,i,i*i*i);
+    }
+	
+}
+5.Write a program in C to make such a pattern like right angle triangle with a number which will repeat a number in a row. 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+int i,n,j;
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+    for(j=1;j<=i;j++)
+    {
+  printf("%d",i);
+    }
+    printf("\n");
+}
+}
 Write a C program to accept two integers and check whether they are equal or not. 
 #include <iostream>
 using namespace std;
