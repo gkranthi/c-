@@ -205,3 +205,35 @@ int main()
         printf("'%c' is special character.", ch);
     }
 }
+Write a program in C to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the 
+user should be taken from the keyboard and display the total amount to pay to the customer.
+#include <iostream>
+#include <ctype.h>
+using namespace std;
+
+int main() {
+int i,j,amt,surge,total;
+char s;
+scanf("%d %s %d",&i,&s,&j);
+   if ( j <= 199)
+   {
+      amt = j * 1.2;
+    else if ( j>199 && j<400)
+       amt = j * 1.5;
+    else if ( j>=400 && j<600)
+       amt = j * 1.8; 
+    else if ( j>=600)
+       amt = j * 2; 
+   }
+    if ( amt > 400 )   
+       surge = amt * 0.15;
+    if  ( surge >= 100 )
+     total = amt + surge;
+     
+     printf("Customer IDNO :%d",i);
+     printf("Customer Name :%s",s);
+     printf("unit Consumed :%d",j);
+     printf("Amount Charges @Rs. 2.00 per unit :%d",amt);
+     printf("Surchage Amount :%d",surge);
+     printf("Net Amount Paid By the Customer :%d",total);
+}
